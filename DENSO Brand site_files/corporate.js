@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     txtElement.style.color = "rgb(191,191,191)";
     document.getElementById("toCorporateLink").style.background = "#5f00dc";
-    debugger;
-    document.getElementById("dcross_image").src = "./images/dcross.png";
+    // debugger;
+    // document.getElementById("dcross_image").src = "./images/dcross.png";
     document.getElementById("toCorporate").style.background =
       "linear-gradient(90deg, rgba(16,16,17,1) 0%, rgba(62,6,125,0.5942752100840336) 46%, rgba(0,0,0,1) 100%, rgba(8,8,114,1) 100%, rgba(0,212,255,1) 100%)";
   }
