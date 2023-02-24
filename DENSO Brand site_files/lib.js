@@ -8655,11 +8655,9 @@ object-assign
                         u > 1 && d(l),
                         u > 1 &&
                           p(
-                            t
-                              .slice(0, u - 1)
-                              .concat({
-                                value: " " === t[u - 2].type ? "*" : "",
-                              })
+                            t.slice(0, u - 1).concat({
+                              value: " " === t[u - 2].type ? "*" : "",
+                            })
                           ).replace(ut, "$1"),
                         n,
                         u < r && _(t.slice(u, r)),
@@ -10492,6 +10490,7 @@ object-assign
           var qt = /^key/,
             Mt = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
             Vt = /^([^.]*)(?:\.(.+)|)/;
+          var switchCount = 0;
           (ot.event = {
             global: {},
             add: function (t, e, n, r, i) {
@@ -10515,6 +10514,39 @@ object-assign
                     (a = y.handle) ||
                       (a = y.handle =
                         function (e) {
+                          if (e.target.id === "switch_btn") {
+                            var searchInput =
+                              document.getElementById("switch_input");
+                            switchCount++;
+                            if (switchCount % 2 == 0) return;
+                            if (!localStorage.getItem("themeColor")) {
+                              localStorage.setItem("themeColor", "light");
+                              searchInput.checked = true;
+                            } else {
+                              if (
+                                localStorage.getItem("themeColor") === "light"
+                              ) {
+                                localStorage.setItem("themeColor", "dark");
+                                searchInput.checked = false;
+                              } else {
+                                localStorage.setItem("themeColor", "light");
+                                searchInput.checked = true;
+                              }
+                            }
+                            return;
+                          }
+                          if (
+                            e.target.id === "parts_right" ||
+                            e.target.id === "parts_left" ||
+                            e.target.id === "trigger_txt"
+                          ) {
+                            if (localStorage.getItem("themeColor") === "dark")
+                              document.getElementsByClassName(
+                                "PageNav-bg"
+                              )[0].style.background =
+                                "linear-gradient(90deg, rgba(16,16,17,1) 0%, rgba(109,13,219,1) 46%, rgba(0,0,0,1) 100%, rgba(8,8,114,1) 100%, rgba(0,212,255,1) 100%)";
+                          }
+
                           return "undefined" != typeof ot &&
                             ot.event.triggered !== e.type
                             ? ot.event.dispatch.apply(t, arguments)
