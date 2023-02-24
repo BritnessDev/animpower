@@ -33082,7 +33082,7 @@ object-assign
         var i = {
           name: "DENSO Brand site",
           charset: "UTF-8",
-          copyright: "Copyright © DENSO CORPORATION. All rights reserved.",
+          copyright: "Copyright © Alejandro Santiago. All rights reserved.",
           viewport: "width=device-width, initial-scale=1",
           hostname: "brand.denso.com",
           assets: {
@@ -34176,9 +34176,9 @@ object-assign
                         { href: l + "/", className: "js_internal-link" },
                         i.createElement(n, {
                           name: "logo-denso-small-tagline",
-                          title: "DENSO Crafting the Core",
+                          title: "Alejandro Santiago",
                           titleId: "pageHeader-logoDenso-title",
-                          desc: "DENSO Crafting the Core",
+                          desc: "Alejandro Santiago",
                         })
                       )
                     ),
@@ -34274,7 +34274,7 @@ object-assign
                                   i.createElement(
                                     "span",
                                     { className: "text-brand trigger-txt" },
-                                    "BRAND SITE02"
+                                    "PORTFOLIO"
                                   )
                                 ),
                                 e.push(
@@ -35186,9 +35186,9 @@ object-assign
                                     },
                                     i.createElement(e, {
                                       name: "logo-denso-big-tagline",
-                                      title: "DENSO Crafting the Core",
+                                      title: "Alejandro Santiago",
                                       titleId: "homeScene-logoDenso-title",
-                                      desc: "DENSO Crafting the Core",
+                                      desc: "Alejandro Santiago",
                                     })
                                   )
                                 )
@@ -36786,9 +36786,9 @@ object-assign
                                 { className: "HomeScene1-logo-inner" },
                                 i.createElement(e, {
                                   name: "logo-denso-small-tagline",
-                                  title: "DENSO Crafting the Core",
+                                  title: "Alejandro Santiago",
                                   titleId: "homeScene-logoDenso-title",
-                                  desc: "DENSO Crafting the Core",
+                                  desc: "Alejandro Santiago",
                                 })
                               )
                             )
@@ -38678,9 +38678,9 @@ object-assign
                                 { className: "tagline-large" },
                                 i.createElement(n, {
                                   name: "logo-denso-mega-tagline",
-                                  title: "DENSO Crafting the Core",
+                                  title: "Alejandro Santiago",
                                   titleId: "viTagline-tagline-mega-title",
-                                  desc: "DENSO Crafting the Core",
+                                  desc: "Alejandro Santiago",
                                 })
                               )
                             ),
@@ -38692,9 +38692,9 @@ object-assign
                                 { className: "tagline-small" },
                                 i.createElement(n, {
                                   name: "logo-denso-small-tagline",
-                                  title: "DENSO Crafting the Core",
+                                  title: "Alejandro Santiago",
                                   titleId: "viTagline-tagline-small-title",
-                                  desc: "DENSO Crafting the Core",
+                                  desc: "Alejandro Santiago",
                                 })
                               ),
                               i.createElement(
@@ -38702,9 +38702,9 @@ object-assign
                                 { className: "tagline-medium" },
                                 i.createElement(n, {
                                   name: "logo-denso-big-tagline",
-                                  title: "DENSO Crafting the Core",
+                                  title: "Alejandro Santiago",
                                   titleId: "viTagline-tagline-big-title",
-                                  desc: "DENSO Crafting the Core",
+                                  desc: "Alejandro Santiago",
                                 })
                               )
                             )
@@ -42439,7 +42439,7 @@ object-assign
                             i.createElement(
                               "span",
                               {},
-                              "Copyright © DENSO CORPORATION."
+                              "Copyright © Alejandro Santiago."
                             ),
                             i.createElement("span", {}, "All rights reserved.")
                           )
