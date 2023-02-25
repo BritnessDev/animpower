@@ -2720,7 +2720,7 @@
       </header>
       <main class="PageMain">
         <div class="PageContainer">
-          <div class="react-content Home showContents" style="opacity: 1; height: 912px;">
+          <div class="react-content Home showContents" id="home_container" style="opacity: 1; height: 912px;">
             <div id="home" class="Home-inner">
               <section id="scene1" class="HomeScene HomeScene1" style="visibility: inherit; opacity: 1;">
                 <div class="HomeScene-bg HomeScene1-bg" style="transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -2734,7 +2734,7 @@
                     <div class="HomeScene1-dcross-line1 show" style="transform: matrix(1, 0, 0, 1, 0, 0);"><img
                         src="./DENSO Brand site_files/dcross_1.png" alt=""></div>
                     <div class="HomeScene1-dcross-line2 show" style="transform: matrix(1, 0, 0, 1, 0, 0);"><img
-                        src="./DENSO Brand site_files/dcross_2.png" alt="" id="dcross_image"></div>
+                        src="./DENSO Brand site_files/dcross_2.png" id="dcross_image" alt=""></div>
                   </div>
                 </div>
                 <div class="HomeScene1-body">
@@ -3064,6 +3064,13 @@
     </div>
     <button class="toCorporate-close" id="toCorporateClose"></button>
   </div>
+  <script>
+    if (!localStorage.getItem("themeColor"))
+      localStorage.setItem("themeColor", "light");
+    var themeColor = localStorage.getItem("themeColor");
+    // debugger
+    document.body.style.backgroundColor = (themeColor === "light" ? "#dc0032" : "black");
+  </script>
   <script src="./DENSO Brand site_files/lib.js"></script>
   <script src="./DENSO Brand site_files/body.js"></script>
   <script src="./DENSO Brand site_files/corporate.js"></script>

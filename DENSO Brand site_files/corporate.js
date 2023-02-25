@@ -33,17 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
     linkTxt = "DENSO コーポレートサイト";
     link = "https://www.denso.com/jp/ja/";
   }
-
   txtElement.innerHTML = txt;
   if (localStorage.getItem("themeColor") === "light") {
     txtElement.style.color = "#666";
     document.getElementById("toCorporate").style.backgroundColor = "white";
   } else {
-    debugger;
     txtElement.style.color = "rgb(191,191,191)";
-    // document.getElementById("toCorporateLink").style.background = "#5f00dc";
-    // debugger;
-    // document.getElementById("dcross_image").src = "./images/dcross.png";
     document.getElementById("toCorporate").style.background =
       "linear-gradient(90deg, rgba(12,12,12,1) 0%, rgba(27,24,24,1) 39%, rgba(27,24,24,1) 58%, rgba(0,0,0,1) 100%, rgba(8,8,114,1) 100%, rgba(12,12,12,1) 100%)";
   }

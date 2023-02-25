@@ -34129,6 +34129,7 @@ object-assign
     391: [
       function (e, t, n) {
         var i = e("react");
+        var themeColor = localStorage.getItem("themeColor");
         (t.exports = function (e) {
           var t = [],
             n = e || {};
@@ -34273,7 +34274,15 @@ object-assign
                                 (e.push(
                                   i.createElement(
                                     "span",
-                                    { className: "text-brand trigger-txt" },
+                                    {
+                                      className: "text-brand trigger-txt",
+                                      style: {
+                                        color:
+                                          themeColor === "light"
+                                            ? "black"
+                                            : "white",
+                                      },
+                                    },
                                     "PORTFOLIO"
                                   )
                                 ),
@@ -36711,13 +36720,20 @@ object-assign
             function (e, n) {
               var r = "/ja",
                 a = "https://www.denso.com/jp/ja/";
+              var themeColor = localStorage.getItem("themeColor");
+              // debugger;
               "en" === n.ctx.lang && ((r = ["/en"]), (a = "#")),
                 "zh" === n.ctx.lang &&
                   ((r = ["/zh"]), (a = "https://www.denso.com/cn/zh/")),
                 t.push(
                   i.createElement(
                     "div",
-                    { className: "react-content Home" },
+                    {
+                      className: "react-content Home",
+                      style: {
+                        background: themeColor === "light" ? "white" : "black",
+                      },
+                    },
                     i.createElement(
                       "div",
                       { id: "home", className: "Home-inner" },
@@ -36765,9 +36781,12 @@ object-assign
                                 className: "HomeScene1-dcross-line2",
                               },
                               i.createElement("img", {
-                                src: "https://brand.denso.com/media/img/home/dcross_2.png",
-                                alt: "",
+                                src:
+                                  themeColor === "light"
+                                    ? "https://brand.denso.com/media/img/home/dcross_2.png"
+                                    : "DENSO Brand site_files/dcross_dark.png",
                                 id: "dcross_image",
+                                alt: "",
                               })
                             )
                           )
@@ -36815,9 +36834,21 @@ object-assign
                           { className: "HomeScene-bg HomeScene3-bg" },
                           i.createElement(
                             "div",
-                            { className: "HomeScene3-bg-visual" },
+                            {
+                              className: "HomeScene3-bg-visual",
+                              style: {
+                                backgroundImage: `url(${
+                                  themeColor === "light"
+                                    ? "https://brand.denso.com/media/img/home/ceo.jpg"
+                                    : "https://i.ibb.co/fdBc6Kc/dark-ceo-back.jpg"
+                                })`,
+                              },
+                            },
                             i.createElement("img", {
-                              src: "https://brand.denso.com/media/img/home/ceo.jpg",
+                              src:
+                                themeColor === "light"
+                                  ? "https://brand.denso.com/media/img/home/ceo.jpg"
+                                  : "DENSO Brand site_files/dark_ceo_back.jpg",
                               alt: "ceo",
                             })
                           ),
@@ -36859,6 +36890,12 @@ object-assign
                                           "span",
                                           {
                                             className: "HomeScene3-title-text",
+                                            style: {
+                                              color:
+                                                themeColor === "light"
+                                                  ? "black"
+                                                  : "white",
+                                            },
                                           },
                                           "Time of Great Change"
                                         )
@@ -36904,6 +36941,12 @@ object-assign
                                             {
                                               className:
                                                 "HomeScene3-summary-inner",
+                                              style: {
+                                                color:
+                                                  themeColor === "light"
+                                                    ? "black"
+                                                    : "white",
+                                              },
                                             },
                                             "It's a time of great change in the auto industry, and great opportunity. Our tagline, Crafting the Core, means pushing past the boundaries of what's possible to create the next techonologies."
                                           )
@@ -37306,7 +37349,13 @@ object-assign
                         { id: "scene6", className: "HomeScene HomeScene6" },
                         i.createElement(
                           "div",
-                          { className: "HomeScene-bg HomeScene6-bg" },
+                          {
+                            className: "HomeScene-bg HomeScene6-bg",
+                            style: {
+                              background:
+                                themeColor === "light" ? "white" : "black",
+                            },
+                          },
                           i.createElement(
                             "div",
                             { className: "HomeScene6-bg-visual" },
@@ -37362,11 +37411,19 @@ object-assign
                                       { className: "HomeScene6-title" },
                                       i.createElement(
                                         "span",
-                                        { className: "HomeScene6-title-inner" },
+                                        {
+                                          className: "HomeScene6-title-inner",
+                                        },
                                         i.createElement(
                                           "span",
                                           {
                                             className: "HomeScene6-title-text",
+                                            style: {
+                                              color:
+                                                themeColor === "light"
+                                                  ? "black"
+                                                  : "white",
+                                            },
                                           },
                                           "New Visual Identity"
                                         )
@@ -37412,6 +37469,12 @@ object-assign
                                             {
                                               className:
                                                 "HomeScene6-summary-inner",
+                                              style: {
+                                                color:
+                                                  themeColor === "light"
+                                                    ? "black"
+                                                    : "white",
+                                              },
                                             },
                                             "We have redefined the key elements that convey the DENSO brand, such as our corporate logo and typeface, colors, and graphics. Each element reflects our vision and beliefs."
                                           )
@@ -37498,12 +37561,20 @@ object-assign
                                     ? t.push(
                                         i.createElement(
                                           "p",
-                                          { className: "HomeScene7-summary" },
+                                          {
+                                            className: "HomeScene7-summary",
+                                          },
                                           i.createElement(
                                             "span",
                                             {
                                               className:
                                                 "HomeScene7-summary-inner",
+                                              style: {
+                                                color:
+                                                  themeColor === "light"
+                                                    ? "black"
+                                                    : "white",
+                                              },
                                             },
                                             "世界を見つめ、未来を見つめる。",
                                             "自然を愛し、社会とともに生きる。",
@@ -37548,7 +37619,15 @@ object-assign
                                     : t.push(
                                         i.createElement(
                                           "p",
-                                          { className: "HomeScene7-summary" },
+                                          {
+                                            className: "HomeScene7-summary",
+                                            style: {
+                                              color:
+                                                themeColor === "light"
+                                                  ? "black"
+                                                  : "white",
+                                            },
+                                          },
                                           i.createElement(
                                             "span",
                                             {
