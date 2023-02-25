@@ -1515,6 +1515,8 @@ html {
   display: inline-block;
   width: 50px;
   height: 25px;
+  bottom: 50px;
+  right: 50px;
 }
 
 .switch input {

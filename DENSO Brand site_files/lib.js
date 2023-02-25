@@ -10533,6 +10533,7 @@ object-assign
                                 searchInput.checked = true;
                               }
                             }
+                            window.location.reload();
                             return;
                           }
                           if (

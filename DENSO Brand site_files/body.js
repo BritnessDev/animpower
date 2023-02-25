@@ -34308,38 +34308,38 @@ object-assign
                             );
                           }.call(this)
                         )
-                      ),
-                      i.createElement.apply(
-                        i,
-                        [
-                          "div",
-                          { className: "PageHeader-Switch-Button" },
-                        ].concat(
-                          function () {
-                            var e = [];
-                            var theme = localStorage.getItem("themeColor");
-                            return (
-                              "top" == r.ctx.page &&
-                                e.push(
-                                  i.createElement(
-                                    "label",
-                                    { className: "switch" },
-                                    i.createElement("input", {
-                                      type: "checkbox",
-                                      checked: theme === "light" ? true : false,
-                                      id: "switch_input",
-                                    }),
-                                    i.createElement("span", {
-                                      className: "slider round",
-                                      id: "switch_btn",
-                                    })
-                                  )
-                                ),
-                              e
-                            );
-                          }.call(this)
-                        )
                       )
+                      // i.createElement.apply(
+                      //   i,
+                      //   [
+                      //     "div",
+                      //     { className: "PageHeader-Switch-Button" },
+                      //   ].concat(
+                      //     function () {
+                      //       var e = [];
+                      //       var theme = localStorage.getItem("themeColor");
+                      //       return (
+                      //         "top" == r.ctx.page &&
+                      //           e.push(
+                      //             i.createElement(
+                      //               "label",
+                      //               { className: "switch" },
+                      //               i.createElement("input", {
+                      //                 type: "checkbox",
+                      //                 checked: theme === "light" ? true : false,
+                      //                 id: "switch_input",
+                      //               }),
+                      //               i.createElement("span", {
+                      //                 className: "slider round",
+                      //                 id: "switch_btn",
+                      //               })
+                      //             )
+                      //           ),
+                      //         e
+                      //       );
+                      //     }.call(this)
+                      //   )
+                      // )
                     )
                   )
                 );
@@ -34630,6 +34630,7 @@ object-assign
           return (
             function (e, n) {
               var r = "/ja";
+              var theme = localStorage.getItem("themeColor");
               "en" === n.ctx.lang && (r = ["/en"]),
                 "zh" === n.ctx.lang && (r = ["/zh"]),
                 t.push(
@@ -34666,6 +34667,7 @@ object-assign
                         ["div", { className: "Hero-body" }].concat(
                           function () {
                             var e = [];
+                            var theme = localStorage.getItem("themeColor");
                             return (
                               e.push(
                                 i.createElement(
@@ -34733,9 +34735,17 @@ object-assign
                         )
                       ),
                       i.createElement(
-                        "div",
-                        { className: "" },
-                        i.createElement("div", { className: "" }, "switch")
+                        "label",
+                        { className: "switch" },
+                        i.createElement("input", {
+                          type: "checkbox",
+                          checked: theme === "light" ? true : false,
+                          id: "switch_input",
+                        }),
+                        i.createElement("span", {
+                          className: "slider round",
+                          id: "switch_btn",
+                        })
                       )
                     ),
                     i.createElement(
@@ -35077,6 +35087,7 @@ object-assign
           return (
             function (e, n) {
               var r = "/ja";
+              var theme = localStorage.getItem("themeColor");
               "en" === n.ctx.lang && (r = ["/en"]),
                 "zh" === n.ctx.lang && (r = ["/zh"]),
                 t.push(
@@ -35180,9 +35191,17 @@ object-assign
                         )
                       ),
                       i.createElement(
-                        "div",
-                        { className: "" },
-                        i.createElement("div", { className: "" }, "switch")
+                        "label",
+                        { className: "switch" },
+                        i.createElement("input", {
+                          type: "checkbox",
+                          checked: theme === "light" ? true : false,
+                          id: "switch_input",
+                        }),
+                        i.createElement("span", {
+                          className: "slider round",
+                          id: "switch_btn",
+                        })
                       )
                     ),
                     i.createElement(
@@ -36009,6 +36028,7 @@ object-assign
               var r = "/ja",
                 a = "brightcove:5986985559001",
                 o = "brightcove:5986964029001";
+              var theme = localStorage.getItem("themeColor");
               "en" === n.ctx.lang &&
                 ((r = ["/en"]),
                 (a = "brightcove:5986965261001"),
@@ -36051,6 +36071,7 @@ object-assign
                         ["div", { className: "Hero-body" }].concat(
                           function () {
                             var e = [];
+                            var theme = localStorage.getItem("themeColor");
                             return (
                               e.push(
                                 i.createElement(
@@ -36118,9 +36139,17 @@ object-assign
                         )
                       ),
                       i.createElement(
-                        "div",
-                        { className: "" },
-                        i.createElement("div", { className: "" }, "switch")
+                        "label",
+                        { className: "switch" },
+                        i.createElement("input", {
+                          type: "checkbox",
+                          checked: theme === "light" ? true : false,
+                          id: "switch_input",
+                        }),
+                        i.createElement("span", {
+                          className: "slider round",
+                          id: "switch_btn",
+                        })
                       )
                     ),
                     i.createElement(
@@ -36850,9 +36879,17 @@ object-assign
                           )
                         ),
                         i.createElement(
-                          "div",
-                          { className: "" },
-                          i.createElement("div", { className: "" }, "switch")
+                          "label",
+                          { className: "switch" },
+                          i.createElement("input", {
+                            type: "checkbox",
+                            checked: themeColor === "light" ? true : false,
+                            id: "switch_input",
+                          }),
+                          i.createElement("span", {
+                            className: "slider round",
+                            id: "switch_btn",
+                          })
                         )
                       ),
                       i.createElement(
@@ -37810,9 +37847,17 @@ object-assign
                           )
                         ),
                         i.createElement(
-                          "div",
-                          { className: "" },
-                          i.createElement("div", { className: "" }, "switch")
+                          "label",
+                          { className: "switch" },
+                          i.createElement("input", {
+                            type: "checkbox",
+                            checked: themeColor === "light" ? true : false,
+                            id: "switch_input",
+                          }),
+                          i.createElement("span", {
+                            className: "slider round",
+                            id: "switch_btn",
+                          })
                         )
                       )
                     )
@@ -37995,6 +38040,7 @@ object-assign
           return (
             function (e, n, r, a) {
               var o = "/ja";
+              var theme = localStorage.getItem("themeColor");
               "en" === a.ctx.lang && (o = ["/en"]),
                 "zh" === a.ctx.lang && (o = ["/zh"]),
                 t.push(
@@ -38103,9 +38149,17 @@ object-assign
                         )
                       ),
                       i.createElement(
-                        "div",
-                        { className: "" },
-                        i.createElement("div", { className: "" }, "switch")
+                        "label",
+                        { className: "switch" },
+                        i.createElement("input", {
+                          type: "checkbox",
+                          checked: theme === "light" ? true : false,
+                          id: "switch_input",
+                        }),
+                        i.createElement("span", {
+                          className: "slider round",
+                          id: "switch_btn",
+                        })
                       )
                     ),
                     i.createElement(
