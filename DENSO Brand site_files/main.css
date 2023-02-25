@@ -1511,7 +1511,7 @@ html {
   /* overflow: hidden; */
 }
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 50px;
   height: 25px;
@@ -8255,7 +8255,7 @@ input[type="submit"] {
     right: 59px;
   }
   .HomeNavDots-neighbor {
-    right: 50px;
+    right: calc(50% - 22px);
     bottom: 40px;
   }
   .HomeScene1-logo,
