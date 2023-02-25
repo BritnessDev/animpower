@@ -34720,6 +34720,20 @@ object-assign
                       ),
                       i.createElement(
                         "div",
+                        { className: "HomeNavDots-neighbor" },
+                        i.createElement(
+                          "div",
+                          { className: "HomeNavDots-neighbor-arrow" },
+                          i.createElement(e, {
+                            name: "arrow-bottom",
+                            title: "next",
+                            titleId: "homeNavDots-arrowBottom-title",
+                            desc: "next",
+                          })
+                        )
+                      ),
+                      i.createElement(
+                        "div",
                         { className: "ButtonScroll" },
                         i.createElement(
                           "div",
@@ -35157,6 +35171,20 @@ object-assign
                           titleId: "hero-signCeo-title",
                           desc: "Koji Arima",
                         })
+                      ),
+                      i.createElement(
+                        "div",
+                        { className: "HomeNavDots-neighbor" },
+                        i.createElement(
+                          "div",
+                          { className: "HomeNavDots-neighbor-arrow" },
+                          i.createElement(e, {
+                            name: "arrow-bottom",
+                            title: "next",
+                            titleId: "homeNavDots-arrowBottom-title",
+                            desc: "next",
+                          })
+                        )
                       ),
                       i.createElement(
                         "div",
@@ -36091,6 +36119,20 @@ object-assign
                       ),
                       i.createElement(
                         "div",
+                        { className: "HomeNavDots-neighbor" },
+                        i.createElement(
+                          "div",
+                          { className: "HomeNavDots-neighbor-arrow" },
+                          i.createElement(e, {
+                            name: "arrow-bottom",
+                            title: "next",
+                            titleId: "homeNavDots-arrowBottom-title",
+                            desc: "next",
+                          })
+                        )
+                      ),
+                      i.createElement(
+                        "div",
                         { className: "ButtonScroll" },
                         i.createElement(
                           "div",
@@ -36771,7 +36813,11 @@ object-assign
                               "div",
                               { className: "HomeScene1-dcross-line1" },
                               i.createElement("img", {
-                                src: "https://brand.denso.com/media/img/home/dcross_1.png",
+                                src:
+                                  themeColor === "light"
+                                    ? "https://brand.denso.com/media/img/home/dcross_1.png"
+                                    : "DENSO Brand site_files/dcross_dark_2.png",
+                                id: "dcross_image_2",
                                 alt: "",
                               })
                             ),
@@ -36781,10 +36827,7 @@ object-assign
                                 className: "HomeScene1-dcross-line2",
                               },
                               i.createElement("img", {
-                                src:
-                                  themeColor === "light"
-                                    ? "https://brand.denso.com/media/img/home/dcross_2.png"
-                                    : "DENSO Brand site_files/dcross_dark.png",
+                                src: "https://brand.denso.com/media/img/home/dcross_2.png",
                                 id: "dcross_image",
                                 alt: "",
                               })
@@ -36811,6 +36854,20 @@ object-assign
                                 })
                               )
                             )
+                          )
+                        ),
+                        i.createElement(
+                          "div",
+                          { className: "HomeNavDots-neighbor" },
+                          i.createElement(
+                            "div",
+                            { className: "HomeNavDots-neighbor-arrow" },
+                            i.createElement(e, {
+                              name: "arrow-bottom",
+                              title: "next",
+                              titleId: "homeNavDots-arrowBottom-title",
+                              desc: "next",
+                            })
                           )
                         ),
                         i.createElement(
@@ -38052,6 +38109,20 @@ object-assign
                               e
                             );
                           }.call(this)
+                        )
+                      ),
+                      i.createElement(
+                        "div",
+                        { className: "HomeNavDots-neighbor" },
+                        i.createElement(
+                          "div",
+                          { className: "HomeNavDots-neighbor-arrow" },
+                          i.createElement(e, {
+                            name: "arrow-bottom",
+                            title: "next",
+                            titleId: "homeNavDots-arrowBottom-title",
+                            desc: "next",
+                          })
                         )
                       ),
                       i.createElement(
