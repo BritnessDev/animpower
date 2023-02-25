@@ -34733,20 +34733,20 @@ object-assign
                             desc: "next",
                           })
                         )
-                      ),
-                      i.createElement(
-                        "label",
-                        { className: "switch" },
-                        i.createElement("input", {
-                          type: "checkbox",
-                          checked: theme === "light" ? true : false,
-                          id: "switch_input",
-                        }),
-                        i.createElement("span", {
-                          className: "slider round",
-                          id: "switch_btn",
-                        })
                       )
+                      // i.createElement(
+                      //   "label",
+                      //   { className: "switch" },
+                      //   i.createElement("input", {
+                      //     type: "checkbox",
+                      //     checked: theme === "light" ? true : false,
+                      //     id: "switch_input",
+                      //   }),
+                      //   i.createElement("span", {
+                      //     className: "slider round",
+                      //     id: "switch_btn",
+                      //   })
+                      // )
                     ),
                     i.createElement(
                       "div",
@@ -42587,7 +42587,7 @@ object-assign
                               target: "_blank",
                               "data-ga": "home-nav:click:denso-com",
                             },
-                            i.createElement("span", {}, "www.denso.com"),
+                            i.createElement("span", {}, "www.alejandro.com"),
                             i.createElement(n, {
                               name: "icon-window",
                               title: "open new window",
