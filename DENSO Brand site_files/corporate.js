@@ -39,12 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
     txtElement.style.color = "#666";
     document.getElementById("toCorporate").style.backgroundColor = "white";
   } else {
+    debugger;
     txtElement.style.color = "rgb(191,191,191)";
-    document.getElementById("toCorporateLink").style.background = "#5f00dc";
+    // document.getElementById("toCorporateLink").style.background = "#5f00dc";
     // debugger;
     // document.getElementById("dcross_image").src = "./images/dcross.png";
     document.getElementById("toCorporate").style.background =
-      "linear-gradient(90deg, rgba(16,16,17,1) 0%, rgba(62,6,125,0.5942752100840336) 46%, rgba(0,0,0,1) 100%, rgba(8,8,114,1) 100%, rgba(0,212,255,1) 100%)";
+      "linear-gradient(90deg, rgba(12,12,12,1) 0%, rgba(27,24,24,1) 39%, rgba(27,24,24,1) 58%, rgba(0,0,0,1) 100%, rgba(8,8,114,1) 100%, rgba(12,12,12,1) 100%)";
   }
   linkTxtElemnt.append(linkTxt);
   linkElemnt.setAttribute("href", link);

@@ -10543,8 +10543,7 @@ object-assign
                             if (localStorage.getItem("themeColor") === "dark")
                               document.getElementsByClassName(
                                 "PageNav-bg"
-                              )[0].style.background =
-                                "linear-gradient(90deg, rgba(16,16,17,1) 0%, rgba(109,13,219,1) 46%, rgba(0,0,0,1) 100%, rgba(8,8,114,1) 100%, rgba(0,212,255,1) 100%)";
+                              )[0].style.background = "rgb(12, 12, 12)";
                           }
 
                           return "undefined" != typeof ot &&
