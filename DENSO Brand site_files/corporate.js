@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     txtElement.style.color = "rgb(191,191,191)";
     document.getElementById("toCorporate").style.background =
       "linear-gradient(90deg, rgba(8,7,7,1) 0%, rgba(8,7,7,0.85) 100%)";
+      linkElemnt.style.backgroundColor = "#00edfd";
   }
   linkTxtElemnt.append(linkTxt);
   linkElemnt.setAttribute("href", link);

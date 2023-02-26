@@ -36835,7 +36835,10 @@ object-assign
                                 className: "HomeScene1-dcross-line2",
                               },
                               i.createElement("img", {
-                                src: "https://brand.denso.com/media/img/home/dcross_2.png",
+                                src: 
+                                  themeColor === "light" ?
+                                   "https://brand.denso.com/media/img/home/dcross_2.png"
+                                   : "DENSO Brand site_files/dcross_dark.png",
                                 id: "dcross_image",
                                 alt: "",
                               })
@@ -36845,24 +36848,13 @@ object-assign
                         i.createElement(
                           "div",
                           { className: "HomeScene1-body" },
-                          i.createElement(
-                            "div",
-                            { className: "HomeScene1-body-inner" },
-                            i.createElement(
-                              "h2",
-                              { className: "HomeScene1-logo" },
-                              i.createElement(
-                                "span",
-                                { className: "HomeScene1-logo-inner" },
-                                i.createElement(e, {
-                                  name: "logo-denso-small-tagline",
-                                  title: "Alejandro Santiago",
-                                  titleId: "homeScene-logoDenso-title",
-                                  desc: "Alejandro Santiago",
-                                })
-                              )
-                            )
-                          )
+                          i.createElement("div", {
+                            className: "HomeScene1-body-inner1",
+                            dangerouslySetInnerHTML: {
+                              __html:
+                                "<h1 style='color: white !important; font-size: 6rem;'>Alejandro Santiago</h1>",
+                            },
+                          })
                         ),
                         i.createElement(
                           "div",
