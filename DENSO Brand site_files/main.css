@@ -9055,4 +9055,6 @@ input[type="submit"] {
 
 .PageHeader-logo {
   width: 300px !important;
+  height: 300px !important;
+  line-height: normal !important;
 }

@@ -34172,7 +34172,7 @@ object-assign
                     i.createElement(
                       "h3",
                       { className: "PageHeader-logo", dangerouslySetInnerHTML: {
-                        __html : 'Alejandro Santiago'
+                        __html : 'Alejandro <br> Santiago'
                       } },
                       
                     ),
