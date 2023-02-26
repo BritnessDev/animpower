@@ -1240,7 +1240,7 @@ html {
 }
 .PageHeader-logo {
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 26px;
   color: #fff;
   transition: color 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
@@ -1289,7 +1289,7 @@ html {
   position: fixed;
   z-index: 1;
   padding: 10px;
-  left: 5px;
+  right: 100px;
   top: 4px;
 }
 .no-touchevents .PageHeader-Menu:hover .PageHeader-Menu-circle::before {
@@ -7066,7 +7066,7 @@ input[type="submit"] {
     display: none;
   }
   .PageHeader-logo {
-    right: 35px;
+    left: 35px;
     top: 35px;
   }
   .is-scene3 .PageFooter-shareList,
@@ -7075,7 +7075,7 @@ input[type="submit"] {
     color: #000;
   }
   .PageHeader-Menu {
-    left: 20px;
+    right: 100px;
     top: 19px;
   }
   .PageFooter {
@@ -8160,11 +8160,11 @@ input[type="submit"] {
     height: 36px;
   }
   .PageHeader-logo {
-    right: 50px;
+    left: 50px;
     top: 50px;
   }
   .PageHeader-Menu {
-    left: 40px;
+    right: 100px;
     top: 30px;
   }
   .PageFooter-shareList {
@@ -9051,4 +9051,8 @@ input[type="submit"] {
   margin-right: auto !important;
   margin-top: -150px;
   text-align: center;
+}
+
+.PageHeader-logo {
+  width: 300px !important;
 }

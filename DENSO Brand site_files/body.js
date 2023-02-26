@@ -34170,19 +34170,13 @@ object-assign
                     { role: "banner", className: "PageHeader" },
                     i.createElement("div", { className: "PageHeader-bg" }),
                     i.createElement(
-                      "h1",
-                      { className: "PageHeader-logo" },
-                      i.createElement(
-                        "a",
-                        { href: l + "/", className: "js_internal-link" },
-                        i.createElement(n, {
-                          name: "logo-denso-small-tagline",
-                          title: "Alejandro Santiago",
-                          titleId: "pageHeader-logoDenso-title",
-                          desc: "Alejandro Santiago",
-                        })
-                      )
+                      "h3",
+                      { className: "PageHeader-logo", dangerouslySetInnerHTML: {
+                        __html : 'Alejandro Santiago'
+                      } },
+                      
                     ),
+
                     i.createElement(
                       "a",
                       { href: o, className: a(["PageHeader-Menu", s]) },
