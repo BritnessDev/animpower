@@ -962,6 +962,11 @@ html {
   overflow: hidden;
   transition: background-color 0s cubic-bezier(0.52, 0.08, 0.18, 1) 0s;
 }
+
+.ButtonBox_dark {
+  background-color: #00edfd !important;
+}
+
 .ButtonBox:after,
 .HomeScene6 .ButtonBox {
   background-color: #fff;
@@ -3016,6 +3021,12 @@ input:checked + .slider:before {
   left: 0;
   top: 0;
 }
+
+.HomeScene1-dcross-line3 {
+  z-index: 3;
+}
+
+
 .HomeScene1-dcross-line1.show,
 .HomeScene1-dcross-line2.show {
   opacity: 1;

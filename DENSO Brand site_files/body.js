@@ -36819,7 +36819,7 @@ object-assign
                             { className: "HomeScene1-dcross" },
                             i.createElement(
                               "div",
-                              { className: "HomeScene1-dcross-line1" },
+                              { className: "HomeScene1-dcross-line1 HomeScene1-dcross-line3" },
                               i.createElement("img", {
                                 src:
                                   themeColor === "light"
@@ -37018,8 +37018,8 @@ object-assign
                                         "a",
                                         {
                                           href: r + "/message",
-                                          className:
-                                            "ButtonBox js_internal-link",
+                                          className: themeColor === "light" ? "ButtonBox js_internal-link" : "ButtonBox ButtonBox_dark js_internal-link",
+                                            
                                         },
                                         i.createElement(
                                           "span",
@@ -37198,8 +37198,8 @@ object-assign
                                         "a",
                                         {
                                           href: r + "/futureconcept",
-                                          className:
-                                            "ButtonBox js_internal-link",
+                                          className: themeColor === "light" ? "ButtonBox js_internal-link" : "ButtonBox ButtonBox_dark js_internal-link" 
+                                            
                                         },
                                         i.createElement(
                                           "span",
@@ -37373,8 +37373,7 @@ object-assign
                                         "a",
                                         {
                                           href: r + "/ourpromise",
-                                          className:
-                                            "ButtonBox js_internal-link",
+                                          className: themeColor === "light" ? "ButtonBox js_internal-link" : "ButtonBox ButtonBox_dark js_internal-link" 
                                         },
                                         i.createElement(
                                           "span",
@@ -37546,8 +37545,7 @@ object-assign
                                         "a",
                                         {
                                           href: r + "/vi",
-                                          className:
-                                            "ButtonBox js_internal-link",
+                                          className: themeColor === "light" ? "ButtonBox js_internal-link" : "ButtonBox ButtonBox_dark js_internal-link" 
                                         },
                                         i.createElement(
                                           "span",
