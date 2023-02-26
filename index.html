@@ -2522,6 +2522,11 @@
 
 <body style="height: 912px;" class="is-home is-scene1">
   <!-- Google Tag Manager (noscript) -->
+  <main class="bg__canvas">
+    <!--    This is the cursor   -->
+    <div class="cursor"></div>
+    <div class="dot"></div>
+  </main>
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N778X4G" height="0" width="0"
       style="display:none;visibility:hidden"></iframe>
@@ -3058,6 +3063,75 @@
     </div>
     <button class="toCorporate-close" id="toCorporateClose"></button>
   </div>
+  <style>
+    /*Variables*/
+    :root {
+      --black-color: #17181c;
+      --blue-color: #ffffff;
+      --white-rbg-color: 102, 217, 237;
+      --green-rbg-color: 0, 212, 113;
+    }
+
+    .dot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      top: 12px;
+      left: 12px;
+      border-radius: 50%;
+      background-color: rgb(var(--white-rbg-color));
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+      animation: cursor-animate 550ms infinite alternate;
+      z-index: 99;
+      pointer-events: none;
+    }
+
+    .cursor {
+      width: 25px;
+      height: 25px;
+      border: 1px solid rgba(var(--white-rbg-color), .8);
+      border-radius: 50%;
+      position: absolute;
+      transition-duration: 180ms;
+      transition-timing-function: ease-out;
+      animation: cursor-animate 550ms infinite alternate;
+      z-index: 99;
+      pointer-events: none;
+    }
+
+    .header__title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 300;
+      color: rgb(var(--green-rbg-color));
+    }
+
+    .bg__canvas {
+      width: 100%;
+      height: 100vh;
+      background-color: var(--blue-color);
+      box-sizing: border-box;
+      pointer-events: none;
+    }
+  </style>
+  <script>
+    (() => {
+
+      const cursor = document.querySelector('.cursor');
+      const dot = document.querySelector('.dot');
+      const bg__canvas = document.querySelector('bg__canvas');
+      document.addEventListener('mousemove', e => {
+        cursor.setAttribute('style', `top:  ${e.pageY - 14}px; left: ${e.pageX - 14}px;`);
+        dot.setAttribute('style', `top:  ${e.pageY - 3}px; left: ${e.pageX - 3}px;`)
+      });
+      document.addEventListener('mouseenter', e => {
+        cursor.setAttribute('style', `top:  ${e.pageY - 14}px; left: ${e.pageX - 14}px;`);
+        dot.setAttribute('style', `top:  ${e.pageY - 15}px; left: ${e.pageX - 15}px;`);
+        bg__canvas.setAttribute('style', `display: block;`);
+      })
+    })();
+
+  </script>
   <script>
     if (!localStorage.getItem("themeColor"))
       localStorage.setItem("themeColor", "light");
