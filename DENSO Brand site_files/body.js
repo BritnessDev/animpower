@@ -36801,7 +36801,7 @@ object-assign
                                 className: "js-mainIndexVideo",
                               },
                               i.createElement("source", {
-                                src: "https://brand.denso.com/media/video/main2.mp4",
+                                src: "https://britnessdev.github.io/animpower/DENSO%20Brand%20site_files/home_backdrop.mp4",
                               })
                             )
                           ),
